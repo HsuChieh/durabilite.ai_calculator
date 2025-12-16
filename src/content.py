@@ -9,22 +9,40 @@ HERO_TEXT = """
     padding-top: 20px;
   "
 >
-  Durabilité.ai
+  <a href="https://durabilite.ai" target="_blank" rel="noopener noreferrer">Durabilité.ai</a>
   Calculator
 </h2>
 <div style="text-align:center;">
   <p style="max-width:850px; text-align:left; margin: 0 auto;">
-    This calculator uses
+    This calculator, developed by
+    <a href="https://durabilite.ai" target="_blank" rel="noopener noreferrer">Durabilité.ai,</a>
+    uses
     <a href="https://ecologits.ai/latest/" target="_blank" rel="noopener noreferrer">EcoLogits</a>
-    as its backend, which is an open-source tool developed by
+    as its backend, which is an open-source tool developed by the
     <a href="https://genai-impact.org/" target="_blank" rel="noopener noreferrer">GenAI Impact</a>
-    non-profit that tracks the <b>energy consumption</b> and <b>environmental footprint</b>
-    of using <b>generative AI</b> models through APIs. 
+    non-profit to track the <b>energy consumption</b> and <b>environmental footprint</b>
+    of using <b>generative AI</b> models through the use of APIs. 
     The main difference between this calculator and the original 
     <a href="https://huggingface.co/spaces/genai-impact/ecologits-calculator" target="_blank" rel="noopener noreferrer">Ecologits calculator </a>
     is the focus on company-level AI usage cases.
   </p>
 </div>
+"""
+
+BOTTOM_TEXT = """
+<h2
+  style="
+    color: #0CAE5B;
+    text-align: center;
+    font-size: 50px;
+    line-height: 1.1;
+    margin: 0;
+    padding-top: 20px;
+  "
+>
+  <a href="https://durabilite.ai" target="_blank" rel="noopener noreferrer">Durabilité.ai</a>
+  Calculator
+</h2>
 """
 
 HOW_TO_TEXT = """
@@ -35,8 +53,6 @@ Chose a provider, a model and an example of usage (prompts).
 2. You can then check for equivalences of these impacts.
 
 3. The calculator will extrapolate your example to simulate how impacts can scale rapidly if only one percent of the world population make the same prompt everyday for one year.
-
-
 """
 
 HOW_TO_TEXT_COMPANY = """
@@ -47,8 +63,6 @@ Chose a provider, a model, an example of usage (prompts), your company employee 
 2. You can then check for equivalences of these impacts.
 
 3. The calculator will extrapolate your example to simulate how impacts can scale rapidly if only one percent of the world population make the same prompt everyday for one year.
-
-
 """
 
 WARNING_CLOSED_SOURCE = """
@@ -344,12 +358,12 @@ We divide the scaled water consumption footprint by this value to get the equiva
 #   year = {2025}
 # }"""
 
-# LICENCE_TEXT = """<p xmlns:cc="http://creativecommons.org/ns#" >
-#   This work is licensed under 
-#   <a href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">
-#     CC BY-SA 4.0
-#   </a>
-#   <img style="display:inline-block;height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="">
-#   <img style="display:inline-block;height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt="">
-#   <img style="display:inline-block;height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt="">
-# </p>"""
+LICENCE_TEXT = """<p xmlns:cc="http://creativecommons.org/ns#" >
+  This work is licensed under 
+  <a href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">
+    CC BY-SA 4.0
+  </a>
+  <img style="display:inline-block;height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="">
+  <img style="display:inline-block;height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt="">
+  <img style="display:inline-block;height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt="">
+</p>"""

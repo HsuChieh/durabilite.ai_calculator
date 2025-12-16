@@ -7,7 +7,7 @@ b64 = base64.b64encode(data).decode("utf-8")
 
 st.markdown("""
 <style>
-/* your global font rule (keep if you want) */
+/*global font rule */
 html, body, .stApp {
   font-family: "Hedvig Letters Sans", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif !important;
 }
@@ -19,6 +19,16 @@ html, body, .stApp {
 [class*="material-symbols"] {
   font-family: "Material Icons" !important;
 }
+
+/* global link styling */
+.stApp a, .stApp a:visited {
+  color: inherit !important;
+  text-decoration: none
+}
+.stApp a:hover {
+  text-decoration: underline;
+}
+
 </style>
 """, unsafe_allow_html=True)
 
@@ -28,9 +38,10 @@ from src.content import (
     ABOUT_TEXT,
     # CITATION_LABEL,
     # CITATION_TEXT,
-    # LICENCE_TEXT,
+    LICENCE_TEXT,
     METHODOLOGY_TEXT,
-    SUPPORT_TEXT,
+    # SUPPORT_TEXT,
+    BOTTOM_TEXT
 )
 
 from src.expert import expert_mode
@@ -107,4 +118,6 @@ with tab_method:
 #     st.html(CITATION_LABEL)
 #     st.code(CITATION_TEXT, language="bibtex")
 
-# st.html(LICENCE_TEXT)
+st.html(LICENCE_TEXT)
+
+st.html(BOTTOM_TEXT)

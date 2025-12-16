@@ -10,7 +10,7 @@ from src.constants import PROMPTS
 
 def company_mode():
 
-    st.expander("How to use this calculator?", expanded = False).markdown(HOW_TO_TEXT_COMPANY)
+    st.expander("How do I use this calculator?", expanded = False).markdown(HOW_TO_TEXT_COMPANY)
 
 
     st.markdown("### 👩🏻‍💻 Calculator for companies")

@@ -625,4 +625,4 @@ def range_plot(mean_val, min_val, max_val, unit):
         showlegend=False
     )
 
-    st.plotly_chart(fig, use_container_width=True, config={'displayModeBar': False})
+    st.plotly_chart(fig, width='stretch', config={'displayModeBar': False})

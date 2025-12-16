@@ -5,7 +5,7 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
-    "ecologits>=0.7.3,<0.8.0",
+    "ecologits @ git+https://github.com/HsuChieh/ecologits.git@feat/water-consumption",
     "pint>=0.24.4",
     "plotly>=6.2.0",
     "streamlit>=1.47.1",

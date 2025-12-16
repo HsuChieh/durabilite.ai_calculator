@@ -1,24 +1,30 @@
 HERO_TEXT = """
-<div align="center">
-  <a href="https://ecologits.ai/">
-    <img style="max-height: 200px" alt="EcoLogits" src="https://raw.githubusercontent.com/genai-impact/ecologits/main/docs/assets/logo_calculator.png">
-  </a>
-</div>
-<div align="center">
-  <p style="max-width: 850px; text-align: left">
-    <b>EcoLogits</b> is a python library that tracks the <b>energy consumption</b> and <b>environmental 
-    footprint</b> of using <b>generative AI</b> models through APIs.
-  <br>
-    This Calculator allows a broader access to <b>EcoLogits</b> estimates through a visual application.</i>
- 
+<h2
+  style="
+    color: #0CAE5B;
+    text-align: center;
+    font-size: 50px;
+    line-height: 1.1;
+    margin: 0;
+    padding-top: 20px;
+  "
+>
+  Durabilité.ai
+  Calculator
+</h2>
+<div style="text-align:center;">
+  <p style="max-width:850px; text-align:left; margin: 0 auto;">
+    This calculator uses
+    <a href="https://ecologits.ai/latest/" target="_blank" rel="noopener noreferrer">EcoLogits</a>
+    as its backend, which is an open-source tool developed by
+    <a href="https://genai-impact.org/" target="_blank" rel="noopener noreferrer">GenAI Impact</a>
+    non-profit that tracks the <b>energy consumption</b> and <b>environmental footprint</b>
+    of using <b>generative AI</b> models through APIs. 
+    The main difference between this calculator and the original 
+    <a href="https://huggingface.co/spaces/genai-impact/ecologits-calculator" target="_blank" rel="noopener noreferrer">Ecologits calculator </a>
+    is the focus on company-level AI usage cases.
   </p>
-
 </div>
-<br>
-"""
-
-INTRO_TEXT = """
-EcoLogits Calculator is developed and maintained by [GenAI Impact](https://genai-impact.org/) non-profit. To learn more about EcoLogits documentation visit [ecologits.ai](https://ecologits.ai).
 """
 
 HOW_TO_TEXT = """
@@ -197,16 +203,18 @@ If EcoLogits Calculator brings value to your organization, customers or communit
 - Become a **sponsor**
 - Become a **benefactor member** if you are a public sector or non-profit organization or a university.
 
-Contact us on [GenAI Impact ](https://genai-impact.org/contact/)
+Contact us on [GenAI Impact](https://genai-impact.org/contact/)
 
 """
 
 METHODOLOGY_TEXT = r"""
 ## 📖 Methodology
 
+**Notice: This section is mostly taken from the original Ecologits Calculator. Since this section is directly copied from the original [Ecologits Calculator](https://huggingface.co/spaces/genai-impact/ecologits-calculator), the "we" refers to the Ecologits team. Durabilité.ai's contribution exists at the company-level implimentation.**
+
 We have developed a methodology to **estimate the energy consumption and environmental impacts for an LLM inference** based on request parameters and hypotheses on the data center location, the hardware used, the model architecture and more.
 
-In this section we will only cover the principles of the methodology related to the 🧮 **EcoLogits Calculator**. If you wish to learn more on the environmental impacts modeling of an LLM request checkout the 🌱 [EcoLogits documentation page](https://ecologits.ai/methodology/).
+In this section we will only cover the principles of the methodology related to the calculator. If you wish to learn more on the environmental impacts modeling of an LLM request checkout the 🌱 [EcoLogits documentation page](https://ecologits.ai/methodology/).
 
 ### Modeling impacts of an LLM request
 
@@ -314,37 +322,34 @@ We divide the scaled GHG emissions by this value to get the equivalent number of
 We compare the scaled water consumption to the number of Olympic-sized swimming pools it can fill. From the [2021-2025 facility rules of the FINA](https://web.archive.org/web/20240810051238/https://resources.fina.org/fina/document/2022/02/08/77c3058d-b549-4543-8524-ad51a857864e/210805-Facilities-Rules_clean.pdf), an Olympic-sized swimming pool measures: 50 meters long, 25 meters wide, and a minimum of 2 meters deep. So the volume is 50 \* 25 \* 2 = 2500 cubic meters, or 2.5 million Liters.
 
 We divide the scaled water consumption footprint by this value to get the equivalent number of Olympic-sized swimming pools.
-
-
-#### If you are motivated to help us test and enhance this methodology [contact us](https://genai-impact.org/contact/)! 💪
 """
 
-CITATION_LABEL = "BibTeX citation for EcoLogits Calculator and the EcoLogits library:"
-CITATION_TEXT = """@misc{ecologits_calculator,
-  author={Samuel Rincé, Adrien Banse, Valentin Defour, Caroline Jean-Pierre, Chieh Hsu},
-  title={EcoLogits Calculator},
-  year={2025},
-  howpublished= {\\url{https://huggingface.co/spaces/genai-impact/ecologits-calculator}},
-}
-@article{ecologits_paper,
-  author = {Rincé, Samuel and Banse, Adrien},
-  doi = {10.21105/joss.07471},
-  journal = {Journal of Open Source Software},
-  month = jul,
-  number = {111},
-  pages = {7471},
-  title = {{EcoLogits: Evaluating the Environmental Impacts of Generative AI}},
-  url = {https://joss.theoj.org/papers/10.21105/joss.07471},
-  volume = {10},
-  year = {2025}
-}"""
+# CITATION_LABEL = "BibTeX citation for EcoLogits Calculator and the EcoLogits library:"
+# CITATION_TEXT = """@misc{durabilite.ai_calculator,
+#   author={Chieh Hsu},
+#   title={Durabilité Calculator},
+#   year={2025},
+#   howpublished= {\\url{https://durabilite.ai}},
+# }
+# @article{ecologits_paper,
+#   author = {Rincé, Samuel and Banse, Adrien},
+#   doi = {10.21105/joss.07471},
+#   journal = {Journal of Open Source Software},
+#   month = jul,
+#   number = {111},
+#   pages = {7471},
+#   title = {{EcoLogits: Evaluating the Environmental Impacts of Generative AI}},
+#   url = {https://joss.theoj.org/papers/10.21105/joss.07471},
+#   volume = {10},
+#   year = {2025}
+# }"""
 
-LICENCE_TEXT = """<p xmlns:cc="http://creativecommons.org/ns#" >
-  This work is licensed under 
-  <a href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">
-    CC BY-SA 4.0
-  </a>
-  <img style="display:inline-block;height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="">
-  <img style="display:inline-block;height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt="">
-  <img style="display:inline-block;height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt="">
-</p>"""
+# LICENCE_TEXT = """<p xmlns:cc="http://creativecommons.org/ns#" >
+#   This work is licensed under 
+#   <a href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">
+#     CC BY-SA 4.0
+#   </a>
+#   <img style="display:inline-block;height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="">
+#   <img style="display:inline-block;height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt="">
+#   <img style="display:inline-block;height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt="">
+# </p>"""

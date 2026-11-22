@@ -21,11 +21,14 @@ def company_mode():
         
         col1, col2, col3 = st.columns(3)
 
+        providers_clean = [x for x in df['provider_clean'].unique()]
+        default_provider_index = providers_clean.index('OpenAI') if 'OpenAI' in providers_clean else 0
+
         with col1:
             provider = st.selectbox(
                 label = 'Provider',
-                options = [x for x in df['provider_clean'].unique()],
-                index = 7,
+                options = providers_clean,
+                index = default_provider_index,
                 key = 61
             ) 
 

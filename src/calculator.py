@@ -20,10 +20,11 @@ def calculator_mode():
 
         with col1:
             providers_clean = [x for x in df["provider_clean"].unique()]
+            default_provider_index = providers_clean.index("OpenAI") if "OpenAI" in providers_clean else 0
             provider = st.selectbox(
                 label="Provider",
                 options=providers_clean,
-                index=providers_clean.index("OpenAI"),
+                index=default_provider_index,
             )
 
         with col2:

@@ -29,11 +29,14 @@ def expert_mode():
 
         df = load_models(filter_main=True)
 
+        providers_clean_exp = [x for x in df["provider_clean"].unique()]
+        default_provider_exp_index = providers_clean_exp.index("OpenAI") if "OpenAI" in providers_clean_exp else 0
+
         with col1:
             provider_exp = st.selectbox(
                 label="Provider",
-                options=[x for x in df["provider_clean"].unique()],
-                index=7,
+                options=providers_clean_exp,
+                index=default_provider_exp_index,
                 key=1,
             )
 

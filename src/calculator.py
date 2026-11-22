@@ -1,12 +1,12 @@
 import streamlit as st
 
 from ecologits.tracers.utils import llm_impacts
-from src.impacts import get_impacts, display_impacts, display_equivalent_energy, display_equivalent_ghg, display_equivalent_wcf
-from src.utils import format_impacts, range_percent_impact_one_sided
-from src.content import WARNING_CLOSED_SOURCE, WARNING_MULTI_MODAL, WARNING_BOTH, HOW_TO_TEXT
-from src.models import load_models
+from .impacts import get_impacts, display_impacts, display_equivalent_energy, display_equivalent_ghg, display_equivalent_wcf
+from .utils import format_impacts, range_percent_impact_one_sided
+from .content import WARNING_CLOSED_SOURCE, WARNING_MULTI_MODAL, WARNING_BOTH, HOW_TO_TEXT
+from .models import load_models
 
-from src.constants import PROMPTS
+from .constants import PROMPTS
 
 
 def calculator_mode():

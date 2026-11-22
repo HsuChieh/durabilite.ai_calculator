@@ -1,5 +1,5 @@
 import streamlit as st
-from src.utils import (
+from .utils import (
     format_energy_eq_electric_vehicle,
     format_energy_eq_electricity_consumption_ireland,
     format_energy_eq_electricity_production,

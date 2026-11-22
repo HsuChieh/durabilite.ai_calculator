@@ -1,7 +1,7 @@
 import requests
 import json
 import pandas as pd
-from src.constants import MODEL_REPOSITORY_URL, MAIN_MODELS
+from .constants import MODEL_REPOSITORY_URL, MAIN_MODELS
 import streamlit as st
 
 
